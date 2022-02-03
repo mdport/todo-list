@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+  <!-- ! Основні запити сторінки -->
+  <title>Список справ</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Короткий опис вмісту сторінки">
+  <meta name="author" content="Автор проекту">
+  <meta name="keywords" content="Ключові слова - до 20 слів">
+  <meta name="copyright" content="Авторське право">
+  <meta name="subject" content="Тематика сайту">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- ! CSS і шрифт -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- ! Мобільна специфікація -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ! Теги для соціальних мереж -->
+  <!-- Локалізація сайту, uk_UA -->
+  <meta property="og:locale" content="uk_UA">
+  <!-- Тип контенту, за замовчуванням використовується article -->
+  <meta property="og:type" content="article">
+  <!-- Заголовок сторінки, який буде відображатися в дописі соціальної мережі -->
+  <meta property="og:title" content="Заголовок сторінки">
+  <!-- Опис сторінки -->
+  <meta property="og:description" content="Опис сторінки">
+  <!-- Посилання на зображення, яке буде опубліковане у дописі -->
+  <meta property="og:image" content="img/1280x640.jpg">
+  <!-- Посилання на поточну сторінку -->
+  <meta property="og:url" content="https://link.com/">
+  <!-- Назва сайту -->
+  <meta property="og:site_name" content="Назва сайту">
+
+  <!-- ! Значок favicon -->
+  <!--<link rel="icon" href="img/favicon/favicon.png">-->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- ! Теги для браузерів -->
+  <!-- Chrome, Firefox and Opera -->
+  <meta name="theme-color" content="#ffffff">
+  <!-- Windows Phone -->
+  <meta name="msaplication-navbutton-color" content="#ffffff">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Назва сайту">
+
+  <!-- ! Підсвічування телефону та посилань -->
+  <meta name="format-detection" content="telephone-no">
+  <meta name="format-detection" content="address-no">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div id="hero" class="hero">
+      <h1 class="title">Список справ</h1>
+      <div id="todoApp" class="todo-app">
+        <div id="todoMenu1" class="todo-menu-1">
+          <button id="toggleAll" class="toggle-all" aria-label="Toggle all to do tasks">
+            <span class="rotate">&#x276F;</span>
+          </button>
+          <input id="addTodoTextInput" class="add-todo-text-input" type="text" placeholder="Що вам потрібно зробити?"
+            aria-label="Enter to do text" autofocus>
+        </div>
+        <ul id="todos" class="todos" aria-label="List of to do tasks"></ul>
+        <div id="todoMenu2" class="todo-menu-2">
+          <label id="todosLeft" class="todos-left" aria-label="Number of to do tasks left to complete"></label>
+          <div id="todoMenu2Buttons" class="todo-menu-2-buttons">
+            <button id="showAllTodos" class="menu-2-button active" aria-label="Show all to do tasks">Всі</button>
+            <button id="showUncompletedTodos" class="menu-2-button"
+              aria-label="Show active to do tasks">Активні</button>
+            <button id="showCompletedTodos" class="menu-2-button"
+              aria-label="Show completed to do tasks">Завершені</button>
+          </div>
+          <button id="deleteCompletedButton" class="delete-completed-button"
+            aria-label="Clear completed to do tasks">Очистити</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ! Скрипти -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="libs/jquery-maskedinput/jquery.maskedinput.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
